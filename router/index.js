@@ -24,10 +24,10 @@ router.get('/users', authMiddleware, userController.getUsers);
 router.get('/informatic', predmetController.getInformaticPredmet);
 router.get('/maths', predmetController.getMathsPredmet);
 router.get('/physics', predmetController.getPhysicsPredmet);
-router.get('/predmets', predmetController.getPhysicsPredmet);
+router.get('/predmets', predmetController.getPredmetsArray);
 
-router.get('/informatic/:thema', themaController.getPhysicThema );
-router.get('/maths/:thema', themaController.getInformaticThema );
-router.get('/physics/:thema', themaController.getMathsThema );
+router.get('/informatic/:thema', themaController.getInformaticThema );
+router.get('/maths/:thema', themaController.getMathsThema );
+router.get('/physics/:thema', themaController.getPhysicThema );
 
 module.exports = router
