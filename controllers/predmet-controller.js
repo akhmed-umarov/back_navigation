@@ -3,9 +3,9 @@ const PredmetModel = require('../models/predmet-model');
 class PredmetController { 
    async getPredmetsArray (req, res) { 
       return res.status(200).json([
-      { title: 'Информатика', style: '' , link: 'informatic'},
-      { title: 'Математика', style: '' , link: 'maths'},
-      { title: 'Физика', style: '' , link: 'physics'}
+      { title: 'Информатика', style: 'bg-orange-infor' , link: 'informatic'},
+      { title: 'Математика', style: 'bg-blue-infor' , link: 'maths'},
+      { title: 'Физика', style: 'bg-viol-infor' , link: 'physics'}
    ])}
 
    async getPhysicsPredmet (req, res) { 
