@@ -26,9 +26,7 @@ const start = async () => {
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
-        app.use(cors());
-            // credentials: true,
-            // origin: process.env.CLIENT_URL
+        // app.use(cors());
         app.listen(PORT, () => console.log(`Server started on PORT = ${PORT}`))
     } catch (e) {
         console.log(e);
