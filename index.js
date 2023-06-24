@@ -12,6 +12,7 @@ const app = express()
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
+    crossDomain: true,
     credentials: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     origin: process.env.CLIENT_URL
