@@ -4,8 +4,8 @@ class PredmetController {
    async getPredmetsArray (req, res) { 
       return res.status(200).json([
       { title: 'Информатика', style: 'bg-orange-infor' , link: 'informatic'},
-      { title: 'Математика', style: 'bg-blue-infor' , link: 'maths'},
-      { title: 'Физика', style: 'bg-viol-infor' , link: 'physics'}
+      { title: 'Математика', style: 'bg-blue-math' , link: 'maths'},
+      { title: 'Физика', style: 'bg-viol-physic' , link: 'physics'}
    ])}
 
    async getPhysicsPredmet (req, res) { 
