@@ -5,7 +5,9 @@ class ThemaController {
     const PhysicThema = req.params.thema;
     try {
       ThemaModel.findOne(
-        { predmet: "physics", thema: PhysicThema },
+        { predmet: "physics", link: PhysicThema },
+        { $inc: { vievsCount: 1 } },
+        { returnDocument: "after" },
         (err, doc) => {
           if (err) {
             return res.status(500).json({
@@ -29,10 +31,8 @@ class ThemaController {
   async getInformaticThema(req, res) {
     const InformaticThema = req.params.thema;
     try {
-      ThemaModel.findOneAndUpdate(
-        { predmet: "informatic", thema: InformaticThema },
-        { $inc: { vievsCount: 1 } },
-        { returnDocument: "after" },
+      ThemaModel.findOne(
+        { predmet: "informatic", link: InformaticThema },
         (err, doc) => {
           if (err) {
             return res.status(500).json({
@@ -57,7 +57,7 @@ class ThemaController {
     const MathsThema = req.params.thema;
     try {
       ThemaModel.findOneAndUpdate(
-        { predmet: "maths", thema: MathsThema },
+        { predmet: "maths", link: MathsThema },
         { $inc: { vievsCount: 1 } },
         { returnDocument: "after" },
         (err, doc) => {

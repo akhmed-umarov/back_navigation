@@ -21,6 +21,9 @@ const ThemaSchema = new Schema({
        type: Array, 
        default: ['']
     }, 
+    link: { 
+      type: String
+    }
  } , { 
     timestamps: true
  })

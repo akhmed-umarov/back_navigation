@@ -3,9 +3,9 @@ const PredmetModel = require('../models/predmet-model');
 class PredmetController { 
    async getPredmetsArray (req, res) { 
       return res.status(200).json([
-      { title: 'Информатика', imagUrl: 'informaticImg.jpg', link: 'informatic'},
-      { title: 'Математика', imagUrl: 'mathsImg.jpg',  link: 'maths'},
-      { title: 'Физика', imagUrl: 'physicsImg.jpg',  link: 'physics'}
+      { title: 'Информатика', imgUrl: 'informaticImg.jpg', link: 'informatic'},
+      { title: 'Матwематика', imgUrl: 'mathsImg.jpg',  link: 'maths'},
+      { title: 'Физика', imgUrl: 'physicsImg.jpg',  link: 'physics'}
    ])}
 
    async getPhysicsPredmet (req, res) { 
