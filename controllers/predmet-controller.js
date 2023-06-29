@@ -4,7 +4,7 @@ class PredmetController {
    async getPredmetsArray (req, res) { 
       return res.status(200).json([
       { title: 'Информатика', imgUrl: 'informaticImg.jpg', link: 'informatic'},
-      { title: 'Матwематика', imgUrl: 'mathsImg.jpg',  link: 'maths'},
+      { title: 'Математика', imgUrl: 'mathsImg.jpg',  link: 'maths'},
       { title: 'Физика', imgUrl: 'physicsImg.jpg',  link: 'physics'}
    ])}
 
