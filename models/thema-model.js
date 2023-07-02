@@ -23,6 +23,9 @@ const ThemaSchema = new Schema({
     }, 
     link: { 
       type: String
+    },
+    iconUrl: { 
+      type: String
     }
  } , { 
     timestamps: true
